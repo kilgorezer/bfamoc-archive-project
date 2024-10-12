@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /subpage-template
+Disallow: /videos/templates

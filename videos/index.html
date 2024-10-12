@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html subpage=video>
+  <head>
+    <title>The BFAMOC Archive Project</title>
+    <meta name="description" content="A project to save all episodes of Battle For A Mug Of Cheese." />
+    <meta name="keywords" content="BFAMOC, archive, kilgorezer, Shroomy, Shroomy630, Shroomythe, Shroomythegoat, giggler, giggler800, video" />
+    <meta property="og:title" content="The BFAMOC Archive Project - Videos" />
+    <meta property="og:type" content="video" />
+    <meta property="og:description" content="Watch BFAMOC!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=stylesheet href=/style.css />
+  </head>
+  <body style=background:white>
+    <nav-bar name=Videos>ERROR</nav-bar>
+    <centered_ id="main" style="background:#fefefe">
+      <video id="player">
+        Your browser does not support the video tag.
+      </video><br/>
+      Choose an episode:
+      <select id="episode" onchange=load()>
+        <option value="0">--Select--</option>
+        <option value="1">Episode 1</option>
+        <option value="2">Episode 2</option>
+        <option value="3">Episode 3</option>
+        <option value="4">Episode 4</option>
+        <option value="5">Episode 5</option>
+        <option value="6">Episode 6</option>
+        <option value="7">Episode 7</option>
+        <option value="8">Episode 8</option>
+        <option value="9">Episode 9</option>
+        <option value="10">Episode 10A</option>
+        <option value="11">Episode 10B</option>
+        <option value="12">Episode 10C</option>
+      </select>
+      <br/>
+      <button onclick="rewind()">Rewind</button> |
+      <button onclick="play()">Play</button>
+      <button onclick="pause()">Pause</button> |
+      <button onclick="previous()">Previous</button>
+      <button onclick="next()">Next</button> |
+      <button onclick="fullscreen()">Fullscreen</button><br/>
+      Episode Name:
+      <span id=episodename>N/A</span>
+      <!-- <iframe id=noshow></iframe> -->
+    </centered_>
+  </body>
+  <script src=/style.js ></script>
+  <script src=script.js ></script>
+</html>

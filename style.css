@@ -39,3 +39,34 @@ nav a {
 nav a:hover {
   background-color: #444;
 }
+
+centered_ {
+  display: block;
+  text-align: center;
+}
+
+button, select {
+  background: linear-gradient(to bottom, #55f 0%,#bbf 50%,#cfccff 100%);
+  border: 3px outset #aaf;
+  border-radius: 3px;
+  margin: 1px;
+}
+
+button:hover, select:hover {
+  background: linear-gradient(to bottom, #44e 0%,#aae 50%,#bebbee 100%);
+  border: 3px inset #99e;
+  border-radius: 3px;
+  margin: 1px;
+}
+
+video#player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  background: linear-gradient(to bottom, #000 0%,#222 50%,#555 100%);
+  margin-top:10px;
+  margin-inline: auto;
+  border: 4px inset grey;
+  max-height: 80vh;
+  max-width: 100vh;
+}

@@ -1,5 +1,9 @@
 var navbar = document.body.getElementsByTagName('nav-bar')[0];
 var email = "kilgorezeralt@gmail.com";
+var discord = {
+  url: "https://discord.gg/vCStZHxA7e",
+  desc: "BFAMOC Fans"
+};
 navbar.outerHTML = (`
   <nav>
     <span>Website ${navbar.getAttribute('name').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase())}</span>${(function(a){return ""})("This line gets the name converted to title case.")}
@@ -31,8 +35,8 @@ navbar.outerHTML = (`
   }
   var list = document.getElementsByTagName('not-archived');
   for(i = 0; i < list.length; i++) {
-    list[i].innerHTML = (`
-      <ul>
+    list[i].outerHTML = (`
+      <ul not-archived>
         ${tmp}
       </ul>
     `);
@@ -40,7 +44,13 @@ navbar.outerHTML = (`
   list = document.getElementsByTagName('contact-me');
   for(i = 0; i < list.length; i++) {
     list[i].outerHTML = (`
-      <a href="mailto:${email}">${email}</a>
+      <a contact-me href="mailto:${email}">${email}</a>
+    `);
+  }
+  list = document.getElementsByTagName('discord');
+  for(i = 0; i < list.length; i++) {
+    list[i].outerHTML = (`
+      <a contact-me href="${discord.url}">The ${discord.desc} Discord Server</a>
     `);
   }
 })();
