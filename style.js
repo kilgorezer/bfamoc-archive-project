@@ -48,7 +48,7 @@ navbar.outerHTML = (`
   list = document.getElementsByTagName('discord');
   for(i = 0; i < list.length; i++) {
     list[i].outerHTML = (`
-      <iframe src="https://discord.com/widget?id=1282598356652130436&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <a contact-me href="${discord.url}">The ${discord.desc} Discord Server</a>
     `);
   }
 })();
