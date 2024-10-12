@@ -24,8 +24,6 @@ navbar.outerHTML = (`
     "BFAMOC 6",
     "BFAMOC 7",
     "BFAMOC 8",
-    "BFAMOC 9",
-    "BFAMOC 10A",
     "BFAMOC 10B",
     "BFAMOC 10C",
   ];
