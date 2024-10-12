@@ -51,4 +51,10 @@ navbar.outerHTML = (`
       <a contact-me href="${discord.url}">The ${discord.desc} Discord Server</a>
     `);
   }
+  list = document.getElementsByTagName('select');
+  for(i = 0; i < list.length; i++) {
+    if(list[i].getAttribute('value_')) {
+      list[i].value = list[i].getAttribute('value_');
+    }
+  }
 })();
