@@ -4,9 +4,9 @@ var choice = function(a){return "stored/"+document.getElementById('episode').val
 var playing = false;
 var unloadplayer = Function("player.src='';document.getElementById('episode').value='0';");
 
-async function loadtitle() {
+function loadtitle() {(async function(){
   document.getElementById('episodename').innerText = await (await fetch(choice('txt'))).text();
-}
+})();}
 
 function load() {
   playing=true;
@@ -31,7 +31,7 @@ const rewind = load;
 
 function fullscreen() {
   if(document.fullscreen) {
-    //
+    document.exitFullscreen();
   } else if(document.fullscreenEnabled) {
     document.getElementById('main').requestFullscreen();
   } else {
@@ -61,3 +61,10 @@ function previous() {
 }
 
 player.addEventListener("ended", next);
+document.getElementById('main').addEventListener("onfullscreenchange", function() {
+  if(document.fullscreen) {
+    document.getElementById('main').setAttribute('full-screen', '');
+  } else {
+    document.getElementById('main').removeAttribute('full-screen');
+  }
+});

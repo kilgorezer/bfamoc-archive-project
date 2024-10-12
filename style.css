@@ -45,6 +45,13 @@ centered_ {
   text-align: center;
 }
 
+:fullscreen {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
 button, select {
   background: linear-gradient(to bottom, #55f 0%,#bbf 50%,#cfccff 100%);
   border: 3px outset #aaf;
