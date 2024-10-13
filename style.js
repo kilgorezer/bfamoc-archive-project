@@ -1,16 +1,17 @@
 var navbar = document.body.getElementsByTagName('nav-bar')[0];
 var email = "kilgorezeralt@gmail.com";
+var subject = "Sent From BFAMOC Archive Website";
 var discord = {
   url: "https://discord.gg/vCStZHxA7e",
   desc: "BFAMOC Fans"
 };
 navbar.outerHTML = (`
   <nav>
-    <span>Website ${navbar.getAttribute('name').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase())}</span>${(function(a){return ""})("This line gets the name converted to title case.")}
+    <span>Archive ${navbar.getAttribute('name').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase())}</span>${(function(a){return ""})("This line gets the name converted to title case.")}
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/videos/">Videos</a></li>
-      <li><a href="mailto:${email}">Contact</a></li>
+      <li><a href="mailto:${email}?subject=${encodeURIComponent(subject)}">Contact</a></li>
     </ul>
   </nav>
   <spacer/>
@@ -26,6 +27,7 @@ navbar.outerHTML = (`
     "BFAMOC 8",
     "BFAMOC 10B",
     "BFAMOC 10C",
+    "BFB-Style Test"
   ];
   var tmp = "";
   for(var i = 0; i < items.length; i++) {
@@ -42,7 +44,7 @@ navbar.outerHTML = (`
   list = document.getElementsByTagName('contact-me');
   for(i = 0; i < list.length; i++) {
     list[i].outerHTML = (`
-      <a contact-me href="mailto:${email}">${email}</a>
+      <a contact-me href="mailto:${email}?subject=${encodeURIComponent(subject)}">${email}</a>
     `);
   }
   list = document.getElementsByTagName('discord');
