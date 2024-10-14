@@ -60,3 +60,21 @@ navbar.outerHTML = (`
     }
   }
 })();
+
+var randombits = function(n, c) {
+	var tmp="";
+	for(var i = 0; i < c; i++) {
+		tmp += Math.random() < 1/n ? "1" : "0";
+	}
+	return tmp;
+}
+if( Number(randombits(location.host.includes('local')?1:37, 1)) ) {
+	var _37_ = document.createElement('img');
+	_37_.src = "/37.png";
+	_37_.id = "37";
+	document.body.appendChild(_37_);
+	var _2763_ = document.createElement('img');
+	_2763_.src = "/2763.png";
+	_2763_.id = "2763";
+	document.body.appendChild(_2763_);
+}

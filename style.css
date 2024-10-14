@@ -77,3 +77,69 @@ video#player {
   max-height: 80vh;
   max-width: 100vh;
 }
+
+img {
+  image-rendering: auto;
+}
+
+@keyframes a37 {
+  0% {
+    bottom: -128px;
+    left: -256px;
+  }
+  5% {
+    bottom: 0;
+    left: 0;
+  }
+  50% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    bottom: -64px;
+    left: -128px;
+  }
+}
+
+img[id="37"] {
+  position: fixed;
+  bottom: -64px;
+  left: -128px;
+  animation-name: a37;
+  animation-duration: 20s;
+  height: 64px;
+  aspect-ratio: 2/1;
+}
+
+@keyframes a2763 {
+  0% {
+    bottom: -200px;
+    right: -400px;
+  }
+  5% {
+    bottom: 0;
+    right: 0;
+  }
+  55% {
+    bottom: 0;
+    right: 0;
+  }
+  85% {
+    bottom: -100px;
+    right: -200px;
+  }
+  100% {
+    bottom: -100px;
+    right: -200px;
+  }
+}
+
+img[id="2763"] {
+  position: fixed;
+  bottom: -64px;
+  right: -128px;
+  animation-name: a2763;
+  animation-duration: 20s;
+  height: 100px;
+  aspect-ratio: 2/1;
+}

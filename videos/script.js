@@ -41,7 +41,7 @@ function fullscreen() {
 
 function next() {
   //console.log('Episode ended!');
-  if (Number(document.getElementById('episode').value) < 13) {
+  if (Number(document.getElementById('episode').value) < 14) {
     document.getElementById('episode').value = String(
       Number(document.getElementById('episode').value) + 1
     );
