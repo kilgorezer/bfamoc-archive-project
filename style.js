@@ -21,13 +21,11 @@ navbar.outerHTML = (`
   var items = [
     "BFAMOC 2",
     "BFAMOC 3",
-    "BFAMOC 4",
     "BFAMOC 6",
     "BFAMOC 7",
     "BFAMOC 8",
     "BFAMOC 10B",
     "BFAMOC 10C",
-    "BFB-Style Test"
   ];
   var tmp = "";
   for(var i = 0; i < items.length; i++) {
