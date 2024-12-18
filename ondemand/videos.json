@@ -1,0 +1,9 @@
+{
+	"info": {
+		"avalible": [1, 4, 5, 9, 10, 13],
+		"realcount": ["S1 E1", "S1 E4", "S1 E5", "S1 E9", "S1 E10A", "EXTRA 1"]
+		"services": ["BFAMOC Archive", "YouTube", "Mobile VR Station"],
+		"homepage": ["/", "//www.youtube.com/", "//mgatelabs.com/mobile-vr-station/"],
+	},
+	1: {},
+}
