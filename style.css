@@ -29,15 +29,24 @@ nav li {
   margin: 0 10px;
 }
 
-nav a {
+nav a, nav select {
+  background: transparent !important;
   text-decoration: none;
   color: #fff;
   padding: 5px 10px;
+  border: none;
   border-radius: 3px;
 }
 
-nav a:hover {
-  background-color: #444;
+nav select {
+  padding: 1px 0px;
+  margin: 0;
+}
+
+nav a:hover, nav select:hover, nav select:focus {
+  background: #444 !important;
+  border: none;
+  border-radius: 3px;
 }
 
 centered_ {

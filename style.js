@@ -10,7 +10,7 @@ navbar.outerHTML = (`
     <span>Archive ${navbar.getAttribute('name').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase())}</span>${(function(a){return ""})("This line gets the name converted to title case.")}
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/videos/">Videos</a></li>
+      <li><a href="/videos/">Videos</a><a href="/ondemand/" title="Advanced">&#x25BE;</a></li>
       <li><a href="mailto:${email}?subject=${encodeURIComponent(subject)}">Contact</a></li>
     </ul>
   </nav>
