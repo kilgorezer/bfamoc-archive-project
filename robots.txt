@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /subpage-template
 Disallow: /videos/templates
 Disallow: /vid
+Disallow: /videos/stored
+Disallow: /videos/select
