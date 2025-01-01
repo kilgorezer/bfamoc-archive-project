@@ -1,6 +1,7 @@
 var navbar = document.body.getElementsByTagName('nav-bar')[0];
 var email = "kilgorezeralt@gmail.com";
-var subject = "Sent From BFAMOC Archive Website";
+var subject = "\n\nSent From BFAMOC Archive Website";
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); // This line of code is from https://stackoverflow.com/questions/77506413/detecting-if-the-user-is-on-desktop-or-mobile-in-the-browser and is not under the same attribution restrictions as the rest of the website
 var discord = {
   url: "https://discord.gg/vCStZHxA7e",
   desc: "BFAMOC Fans"
@@ -10,7 +11,7 @@ navbar.outerHTML = (`
     <span>Archive ${navbar.getAttribute('name').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase())}</span>${(function(a){return ""})("This line gets the name converted to title case.")}
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/videos/">Videos</a><a href="/ondemand/" title="Advanced">&#x25BE;</a></li>
+      <li><a href="/videos/">Videos</a>${!isMobile?'<a href="/ondemand/" title="Advanced">&#x25BE;</a>':''}</li>
       <li><a href="mailto:${email}?subject=${encodeURIComponent(subject)}">Contact</a></li>
     </ul>
   </nav>
