@@ -68,3 +68,9 @@ document.getElementById('main').addEventListener("onfullscreenchange", function(
     document.getElementById('main').removeAttribute('full-screen');
   }
 });
+
+//Hash-Based Autoplay
+if(location.hash.length > 1) {
+  document.getElementById('episode').value = location.hash.slice(1);
+  load();
+}
