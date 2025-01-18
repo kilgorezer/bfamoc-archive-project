@@ -20,13 +20,14 @@ navbar.outerHTML = (`
 
 (function(){
   var items = [
-    "BFAMOC 2",
-    "BFAMOC 3",
-    "BFAMOC 6",
-    "BFAMOC 7",
-    "BFAMOC 8",
-    "BFAMOC 10B",
-    "BFAMOC 10C",
+    "BFAMOC 2 (Name &amp; Higher Quality)",
+    "BFAMOC 3 (Name &amp; Higher Quality)",
+    "BFAMOC 4 (Name)",
+    "BFAMOC 6 (Name &amp; Higher Quality)",
+    "BFAMOC 7 (Name &amp; Higher Quality)",
+    "BFAMOC 8 (Name &amp; Higher Quality)",
+    "BFAMOC 10B (Name &amp; Higher Quality)",
+    "BFAMOC 10C (Higher Quality)",
   ];
   var tmp = "";
   for(var i = 0; i < items.length; i++) {
